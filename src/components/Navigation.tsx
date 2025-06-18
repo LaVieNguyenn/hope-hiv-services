@@ -1,8 +1,7 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Heart, Calendar, FileText, Users, BarChart3, User, LogIn, UserPlus } from "lucide-react";
+import { Menu, X, Heart, Calendar, FileText, Users, BarChart3, User, LogIn, UserPlus, Pill, Settings } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +14,9 @@ const Navigation = () => {
     { name: "Bác sĩ", path: "/doctors", icon: Users },
     { name: "Blog", path: "/blog", icon: FileText },
     { name: "Dashboard", path: "/dashboard", icon: BarChart3 },
+    { name: "Phác đồ ARV", path: "/arv-regimens", icon: Pill },
+    { name: "Quản lý BS", path: "/doctor-management", icon: User },
+    { name: "Admin", path: "/admin", icon: Settings },
     { name: "Hồ sơ", path: "/profile", icon: User },
   ];
 
